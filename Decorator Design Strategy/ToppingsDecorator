@@ -1,0 +1,6 @@
+package csce247.assignments.decorator;
+
+//adds toppings to ice cream
+public abstract class ToppingsDecorator extends IceCream {
+	public abstract String toString();
+}
