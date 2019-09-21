@@ -1,0 +1,21 @@
+package csce247.assignments.decorator;
+
+public class ChocolateChips extends ToppingsDecorator{
+	IceCream iceCream;
+	
+	//adds chocolate chips to ice cream
+	public ChocolateChips (IceCream iceCream) {
+		this.iceCream = iceCream;
+	}
+	
+	//adds topping to description of ice cream
+	public String toString() {
+		return iceCream.toString() + " + Chocolate Chips";
+	}
+	
+	//adds cost of chocolate chips to total cost of ice cream
+	public double getCost() {
+		return iceCream.getCost() + .50;
+	}
+
+}
