@@ -1,0 +1,21 @@
+package csce247.assignments.decorator;
+
+public class Sprinkles extends ToppingsDecorator {
+	IceCream iceCream;
+	
+	//adds sprinkles to ice cream
+	public Sprinkles(IceCream iceCream) {
+		this.iceCream = iceCream;
+	}
+	
+	//add sprinkles to description
+	public String toString() {
+		return iceCream.toString() + " + Sprinkles";
+	}
+	
+	//adds cost of sprinkles to cost of ice cream
+	public double getCost() {
+		return iceCream.getCost() + .50;
+	}
+
+}
