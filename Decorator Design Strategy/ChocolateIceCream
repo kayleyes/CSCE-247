@@ -1,0 +1,13 @@
+package csce247.assignments.decorator;
+
+public class ChocolateIceCream extends IceCream {
+	public ChocolateIceCream () {
+		//get description of ice cream
+		this.string = "Chocolate flavored Ice Cream";
+	}
+
+	public double getCost() {
+		//get cost of ice cream as is
+		return getCost() + 1.50;
+	}
+}
