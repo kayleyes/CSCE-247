@@ -1,0 +1,21 @@
+package csce247.assignments.decorator;
+
+public class Cherry extends ToppingsDecorator{
+	IceCream iceCream;
+	
+	//adds a cherry to ice cream
+	public Cherry (IceCream iceCream) {
+		this.iceCream = iceCream;
+	}
+	
+	//adds topping to description
+	public String toString() {
+		return iceCream.toString() + " + Cherry";
+	}
+	
+	//adds cost of cherry to total cost of ice cream
+	public double getCost() {
+		return iceCream.getCost() + .25;
+	}
+
+}
