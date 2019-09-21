@@ -1,0 +1,13 @@
+package csce247.assignments.decorator;
+
+public abstract class IceCream {
+	protected String string;
+	
+  //return description of product
+	public String toString() {
+		return string;
+	}
+	
+	//Get cost for Ice cream type
+	public abstract double getCost();
+}
